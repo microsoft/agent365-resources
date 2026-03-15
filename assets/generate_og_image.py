@@ -3,7 +3,7 @@ import math
 
 WIDTH = 1200
 HEIGHT = 630
-OUTPUT_PATH = "C:/Users/rstand/Source/agent365-resources/assets/og-image.png"
+OUTPUT_PATH = "/Users/robert/source/agent365-resources/images/og-image.png"
 
 BG_COLOR = (15, 27, 45)          # #0f1b2d
 ACCENT_BLUE = (0, 120, 212)       # #0078d4
@@ -77,11 +77,17 @@ def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
         "C:/Windows/Fonts/segoeuib.ttf",
         "C:/Windows/Fonts/arialbd.ttf",
         "C:/Windows/Fonts/calibrib.ttf",
+        "/Library/Fonts/Arial Bold.ttf",
+        "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "/System/Library/Fonts/HelveticaNeue.ttc",
     ]
     candidates_regular = [
         "C:/Windows/Fonts/segoeui.ttf",
         "C:/Windows/Fonts/arial.ttf",
         "C:/Windows/Fonts/calibri.ttf",
+        "/Library/Fonts/Arial.ttf",
+        "/System/Library/Fonts/Supplemental/Arial.ttf",
+        "/System/Library/Fonts/Helvetica.ttc",
     ]
     paths = candidates_bold if bold else candidates_regular
     for path in paths:
@@ -96,7 +102,7 @@ font_title = load_font(68, bold=True)
 font_subtitle = load_font(36, bold=False)
 
 TITLE_TEXT = "Microsoft Agent 365 Resources"
-SUBTITLE_TEXT = "The control plane for AI agents"
+SUBTITLE_TEXT = "https://aka.ms/agent365/resources"
 
 # --- Draw title (centered, white) ---
 title_bbox = draw.textbbox((0, 0), TITLE_TEXT, font=font_title)
@@ -113,7 +119,7 @@ sub_w = sub_bbox[2] - sub_bbox[0]
 sub_x = (WIDTH - sub_w) // 2
 sub_y = title_y + title_h + 28
 
-draw.text((sub_x, sub_y), SUBTITLE_TEXT, font=font_subtitle, fill=ACCENT_BLUE)
+draw.text((sub_x, sub_y), SUBTITLE_TEXT, font=font_subtitle, fill=WHITE)
 
 # --- Convert RGBA -> RGB before saving as PNG (keeps transparency support) ---
 final = img.convert("RGB")

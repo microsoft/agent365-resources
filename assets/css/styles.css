@@ -65,7 +65,7 @@ a:hover { color: var(--brand-mid); }
 	letter-spacing: -.02em;
 	margin-bottom: .5rem;
 	position: relative;
-	color: #1e1b4b;
+	color: #ffffff;
 }
 .hero p {
 	font-size: 1rem;
@@ -73,10 +73,10 @@ a:hover { color: var(--brand-mid); }
 	max-width: 620px;
 	margin: 0 auto;
 	position: relative;
-	color: #1e1b4b;
+	color: #ffffff;
 }
-.hero a { color: #1e1b4b; font-weight: 700; text-decoration: underline; }
-.hero a:hover { color: #1a1a1a; }
+.hero a { color: #ffffff; font-weight: 700; text-decoration: underline; }
+.hero a:hover { color: #e2e8f0; }
 
 /* ── Search ── */
 .search-bar {
