@@ -45,7 +45,7 @@ a:hover { color: var(--brand-mid); }
 		#2b44b8 0%, #3b5bdb 25%, #6b8ef5 55%,
 		#c4a8e8 80%, #d4aee8 100%);
 	color: #1e1b4b;
-	padding: 5rem 2rem 4rem;
+	padding: 2.75rem 2rem 2.5rem;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
@@ -60,15 +60,15 @@ a:hover { color: var(--brand-mid); }
 	pointer-events: none;
 }
 .hero h1 {
-	font-size: clamp(2rem, 5vw, 3.2rem);
+	font-size: clamp(1.6rem, 4vw, 2.4rem);
 	font-weight: 700;
 	letter-spacing: -.02em;
-	margin-bottom: .75rem;
+	margin-bottom: .5rem;
 	position: relative;
 	color: #1e1b4b;
 }
 .hero p {
-	font-size: 1.15rem;
+	font-size: 1rem;
 	opacity: .9;
 	max-width: 620px;
 	margin: 0 auto;
@@ -81,7 +81,7 @@ a:hover { color: var(--brand-mid); }
 /* ── Search ── */
 .search-bar {
 	max-width: 480px;
-	margin: 2rem auto 0;
+	margin: 1.25rem auto 0;
 	position: relative;
 }
 .search-bar input {
@@ -198,6 +198,7 @@ a:hover { color: var(--brand-mid); }
 .icon-admin    { background: linear-gradient(135deg,#ecfdf5,#a7f3d0); color:#047857; }
 .icon-security { background: linear-gradient(135deg,#fee2e2,#fecaca); color:#b91c1c; }
 .icon-comm     { background: linear-gradient(135deg,#fefce8,#fef08a); color:#854d0e; }
+.icon-webinar  { background: linear-gradient(135deg,#eff6ff,#bfdbfe); color:#1d4ed8; }
 
 .section-title {
 	font-size: 1.1rem;
@@ -327,7 +328,7 @@ footer .copyright {
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
-	.hero { padding: 3.5rem 1.25rem 3rem; }
+	.hero { padding: 2rem 1.25rem 1.75rem; }
 	.content-wrap { padding: 2rem 1rem 3rem; }
 	.nav-strip { justify-content: flex-start; padding: .75rem 1rem; }
 	.section-header { padding: 1rem 1.25rem; }
